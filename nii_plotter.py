@@ -48,9 +48,9 @@ def plot_every_slice(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Visualise predicted images')
-    parser.add_argument('--img_path',default = 'D:\\LIDC_LDRI\\LIDC_TEST\\image\\LIDC-IDRI-0838.nii',help='path to your CT image')
-    parser.add_argument('--mask_path',default = 'D:\\LIDC_LDRI\\LIDC_TEST\\result1.nii',help='path to your prediction mask')
-    parser.add_argument('--save_path',default = 'D:\\LIDC_LDRI\\LIDC_TEST\\result_visualisation\\',help='image save folder')
+    parser.add_argument('--img_path',default = './images/LIDC-IDRI-0838.nii',help='path to your CT image')
+    parser.add_argument('--mask_path',default = './results/result_0838.nii',help='path to your prediction mask')
+    parser.add_argument('--save_path',default = './results_visualisation/LIDC-IDRI-0838',help='image save folder')
 
     args = parser.parse_args()
     plot_every_slice(args)
